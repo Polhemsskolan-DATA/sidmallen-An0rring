@@ -6,32 +6,47 @@ body {
     background-image: url(bilder/rarar.png); /* Stilmall för hela sidan /*Bakgrundsbildens URL.*/
     color: red; /* Textfärg*/
     font-family:'Courier New', Courier, monospace; /* Teckensnitt*/
-    height: 500px; /* Höjd*/
-    width: 350px; /* Bredd */
-    background-size: 1920px, 1080px; /* Bakgrundsbildens storlek*/
-   
+    height: 100%; /* Höjd*/
+    width: 100%; /* Bredd */
+    background-size: cover; /* Bakgrundsbildens storlek*/
+    
+    max-width: 18%;
 }
 
 /* Stilmall för div-element */
 div {
     padding-top: 10px; /* Avstånd ovanför innehållet */
     position: relative; /* Position i förhållande till sitt ursprungliga läge */
-    left: 834px; /* Förflyttning åt vänster */
+    left: 225%; /* Förflyttning åt vänster */
     top: 125px; /* Förflyttning uppåt */
     background-color: rgb(12, 132, 201); /* Bakgrundsfärg */
     border: 5px solid #180adb; /* Kants bredd och färg */
    border-radius: 5px;  /* Kantens rundning */
-    
+    max-width: 100%;
+    min-width: 50%;
+    width: 100%;
     
    
 }
+
+
+
  /* Stilmall för span-element */
-span {
+/*span {
  
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 position: relative;
-left: 45px;
-}
+font-size: 1em;
+left: 10%;
+min-width: 20%;
+max-width: 90%;
+width: 90%;
+
+margin: auto;
+display: block;
+
+} */
+
 
 /* Stilmall för länkar med klassen "link" */
 .link {
@@ -74,15 +89,19 @@ left: 30px;
 #Frame {
     background-color: rgb(24, 171, 230);
     position: relative;
-    bottom: 20px;
+    bottom: 10%;
     left: 22px;
     border: 3px solid rgb(0, 0, 0);
-    width: 170px;
-    height: 275px;
+    /*width: 170px; */
+    max-width: 50%;
+    min-width: 25%;
+    width: 50%;
+    
     font-size: 35px;
     border-radius: 20px;
     
 }
+
 /* Stilmall för ett element med ID "Lorem" */
 #Lorem {
     position: relative;
@@ -92,7 +111,7 @@ left: 30px;
     margin: 5px;
     border: 5px solid rgb(0, 21, 206);
     font-size: 20px;
-    width: 450px;
+    width: 130%;   /* 450px*/
     font-family:fantasy ;
     background-color: rgb(45, 208, 230);
 }
@@ -114,9 +133,11 @@ left: 30px;
 #Bild1{
     border: 5px solid #0044ff;
     position: relative;
-    left: 40px;
+    left: 10%;
     bottom: 15px;
-
+    max-width: 100%;
+    min-width: 50%;
+    width: 75%;
   
     border-radius: 5px;
 }
@@ -124,9 +145,11 @@ left: 30px;
 #Bild2{
     border: 5px solid #0044ff;
     position: relative;
-    right: 5px;
+    left: 10%;
     bottom: 15px;
-    
+    max-width: 100%;
+    min-width: 50%;
+    width: 75%;
 
     border-radius: 5px;
 }
@@ -140,4 +163,70 @@ left: 30px;
     top: 50px;
     height: auto;
     width: 1500px;
+}
+
+
+#SchemaFrame{
+    background-color: rgb(24, 171, 230);
+    position: relative;
+    top: 70px;
+    left: 1%;
+    border: 3px solid rgb(0, 0, 0);
+    /*width: 170px; */
+    max-width: 40%;
+    min-width: 20%;
+  
+    
+    font-size: 160%;
+    border-radius: 5%;
+}
+
+#Sida2Frame{
+    background-color: rgb(24, 171, 230);
+    position: relative;
+    top: 50px;
+    left: 22px;
+    border: 3px solid rgb(0, 0, 0);
+    /*width: 170px; */
+    max-width: 50%;
+    min-width: 25%;
+    width: 50%;
+    
+    font-size: 35px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 200px) {
+    span {
+ 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        font-size: 1em;
+        
+        min-width: 20%;
+        max-width: 90%;
+        width: 90%;
+        
+        margin: auto;
+        display: block;
+        
+        }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    span {
+ 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        font-size: 1em;
+        
+        min-width: 20%;
+        max-width: 90%;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        display: block;
+        
+        }
 }
