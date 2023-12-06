@@ -69,13 +69,7 @@ display: block;
 position: relative;
 left: 30px;
 }
-/* Stilmall för ett element med ID "Schemat" */
-#Schemat {
-    position: relative;
-    left: 800px;
-    top: 25px;
-    
-}
+
 /* Stilmall för ett element med ID "tillbaka" */
 #tillbaka {
     position: relative;
@@ -92,7 +86,6 @@ left: 30px;
     bottom: 10%;
     border: 3px solid rgb(0, 0, 0);
     
-    /*width: 170px; */
     max-width: 100%;
     min-width: 25%;
     width: 200px;
@@ -100,21 +93,23 @@ left: 30px;
     font-size: 35px;
     border-radius: 20px;
     margin: auto;
-    
 }
-
 /* Stilmall för ett element med ID "Lorem" */
 #Lorem {
-    position: relative;
+     position: relative;
     top: 80px;
     left: 650px;
     padding: 5px;
     margin: 5px;
     border: 5px solid rgb(0, 21, 206);
     font-size: 20px;
-    width: 130%;   /* 450px*/
-    font-family:fantasy ;
-    background-color: rgb(45, 208, 230);
+    width: 130%;   
+    font-family: fantasy ;
+    background-color: rgb(45, 208, 230); 
+
+
+  
+    
 }
 
 /* Stilmall för ett element med ID "Ipsum" */
@@ -131,71 +126,65 @@ left: 30px;
 }
 
 /* Stilmall för ett element med ID "Bild1" */
-#Bild1{
-    border: 5px solid #0044ff;
+#Bild1 {
     position: relative;
-    left: 10%;
-    bottom: 15px;
-    max-width: 100%;
-    min-width: 50%;
-    width: 75%;
-  
-    border-radius: 5px;
-}
-/* Stilmall för ett element med ID "Bild2" */
-#Bild2{
-    border: 5px solid #0044ff;
-    position: relative;
-    left: 10%;
-    bottom: 15px;
-    max-width: 100%;
-    min-width: 50%;
-    width: 75%;
-
-    border-radius: 5px;
-}
-
-/* Stilmall för ett element med ID "Bild3" */
-#Bild3{
-
-     border: 4px solid #0808b6;
-    position: relative;
-    left: 125px;
-    top: 50px;
+    width: 100%;
+    max-width: 75%; 
+    min-width: 50%; 
     height: auto;
-    width: 1500px;
+    border: 5px solid #0044ff;
+    border-radius: 5px;
+    margin: 0 auto; 
+    display: block;
 }
 
-
-#SchemaFrame{
-    background-color: rgb(24, 171, 230);
+/* Stilmall för ett element med ID "Bild2" */
+#Bild2 {
     position: relative;
-    top: 70px;
-    left: 1%;
-    border: 3px solid rgb(0, 0, 0);
-    /*width: 170px; */
-    max-width: 40%;
-    min-width: 20%;
-  
-    
-    font-size: 160%;
-    border-radius: 5%;
+    border: 5px solid #0044ff;
+    width: 100%;
+    max-width: 75%; 
+    min-width: 50%; 
+    height: auto;
+    border-radius: 5px;
+    bottom: 15px;
+   margin: 0 auto;
+   display: block;
 }
+
+
+
 
 #Sida2Frame{
     background-color: rgb(24, 171, 230);
     position: relative;
-    top: 50px;
-    left: 22px;
+    bottom: 10%;
     border: 3px solid rgb(0, 0, 0);
-    /*width: 170px; */
-    max-width: 50%;
-    min-width: 25%;
-    width: 50%;
     
+    max-width: 100%;
+    min-width: 25%;
+    width: 200px;
+    height: 220px;
     font-size: 35px;
     border-radius: 20px;
+    margin: auto;
 }
+
+#LoremFrame {
+    background-color: rgb(24, 171, 230);
+    position: relative;
+    top: 80px; 
+    border: 3px solid rgb(0, 0, 0);
+    
+    max-width: 100%;
+    min-width: 25%;
+    width: 200px;
+    height: 220px;
+    font-size: 35px;
+    border-radius: 20px;
+    margin: auto;
+}
+
 
 @media only screen and (max-width: 200px) {
     span {
@@ -232,3 +221,23 @@ left: 30px;
         }
 }
 
+@media (max-width: 800px) {
+    #Frame {
+        font-size: 20px; 
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    #Sida2Frame {
+        font-size: 20px; 
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    #LoremFrame {
+        font-size: 20px; 
+        height: auto;
+    }
+}
